@@ -1,0 +1,23 @@
+.cardProduct {
+  width: 16rem;
+  box-shadow: 2px 2px 5px #999;
+}
+.cardProduct button {
+  background-color: #C693A2;
+  border: none;
+}
+.cardProduct button:hover {
+  background-color: #b88494;
+  color: white;
+}
+
+@media (min-width: 576px) {
+  .cardProduct {
+    width: 16rem;
+    box-shadow: 2px 2px 5px #999;
+  }
+  .cardProduct button {
+    background-color: #C693A2;
+    border: none;
+  }
+}/*# sourceMappingURL=Item.css.map */

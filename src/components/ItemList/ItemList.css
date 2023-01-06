@@ -1,0 +1,24 @@
+@media (min-width: 576px) {
+  .itemList {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+}
+@media (min-width: 768px) {
+  .itemList {
+    gap: 3rem;
+  }
+}
+@media (min-width: 992px) {
+  .itemList {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+  }
+}
+@media (min-width: 1200px) {
+  .itemList {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+  }
+}/*# sourceMappingURL=ItemList.css.map */

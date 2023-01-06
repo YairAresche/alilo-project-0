@@ -1,0 +1,62 @@
+.itemDetail{
+    // display: flex;
+    // margin-top: 2rem;
+    // padding: 0;
+    width: 18rem;
+    background-color: white;
+    border-radius: .5rem;
+    margin: auto;
+    img{
+        width: 18rem;
+        border-radius: .5rem .5rem 0 0;
+    }
+    .details{
+        padding: 1rem;
+    }
+}
+
+
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { 
+    .itemDetail{
+        width: 20rem;
+        img{
+            width: 20rem;
+        }
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { 
+    .itemDetail{
+        display: flex;
+        width: auto;
+        margin-top: 2rem;
+        padding: 0;
+        background-color: white;
+        border-radius: .5rem;
+        img{
+            width: 18rem;
+            border-radius: .5rem 0 0 .5rem;
+        }
+        .details{
+            padding: 2rem;
+        }
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { 
+
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) { 
+
+}

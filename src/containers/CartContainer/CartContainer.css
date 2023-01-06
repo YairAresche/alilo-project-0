@@ -1,0 +1,21 @@
+.cartContainer {
+  background-color: white;
+  border-radius: 0.5rem;
+  padding: 2rem;
+}
+.cartContainer div li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #ededed;
+  padding: 1rem;
+  font-weight: 600;
+}
+.cartContainer div li img {
+  width: 3rem;
+  border-radius: 3px;
+}
+.cartContainer div .cartTotal {
+  border-top: 1px solid #ededed;
+  padding-top: 2rem;
+}/*# sourceMappingURL=CartContainer.css.map */
