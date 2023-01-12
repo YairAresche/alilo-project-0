@@ -30,6 +30,8 @@ function App() {
               <Carousel />
               <Welcome />
               <ItemListContainer />
+              <AboutMe />
+              <Footer />
             </>} />
 
             <Route path='/productos' element={<ItemListContainer />} />
@@ -43,7 +45,7 @@ function App() {
             <Route path='/*' element={<Navigate to='/' />} />
 
           </Routes>
-          
+
           <Footer />
         </main>
 

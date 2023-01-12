@@ -1,3 +1,17 @@
-.aboutMe {
-  padding-top: 1rem;
+.aboutMeContainer {
+  padding: 2rem 0;
+}
+.aboutMeContainer .aboutMeInfo {
+  display: flex;
+}
+.aboutMeContainer .aboutMeInfo img {
+  width: 24rem;
+  border-radius: 4px;
+}
+.aboutMeContainer .aboutMeInfo .aboutMeText {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  padding: 0 1rem 0 2rem;
 }/*# sourceMappingURL=AboutMe.css.map */
