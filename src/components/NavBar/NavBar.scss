@@ -1,7 +1,20 @@
-nav{
-    .navbar-nav{
-        div.dropdown-menu{
-            .dropdown-item:hover{
+nav.navbar {
+    // color: #C693A2;
+    font-size: 1.3rem;
+    padding: 0;
+    .navbar-nav {
+        a:hover {
+            color: #C693A2;
+        }
+
+        .nav-link.active {
+            // color: rgba(0, 0, 0, 0.75);
+            color: #C693A2;
+            font-weight: 100;
+        }
+
+        div.dropdown-menu {
+            .dropdown-item:hover {
                 background-color: #C693A2;
                 color: white;
                 opacity: 0.7;

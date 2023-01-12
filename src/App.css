@@ -1,3 +1,12 @@
+@font-face {
+    font-family: 'Champagne & Limousines';
+    src: url('/font/Champagne\ &\ Limousines.ttf');
+}
+@font-face {
+    font-family: 'Randomly Cute';
+    src: url('/font/Randomly\ Cute.otf');
+}
+
 * {
     margin: 0px;
     padding: 0px;
@@ -8,10 +17,17 @@
 
 body {
     background-color: #ededed;
+    display: flex;
+    flex-direction: column;
 }
 
 main {
-    margin-top: 5rem; /* Evita que navbar fixed tape el contenido al darle el mismo margin-top que la altura del navbar  */
+    padding-top: 4rem; /* Evita que navbar fixed tape el contenido al darle el mismo margin-top que la altura del navbar  */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
 .dropdown-menu .dropdown-item.active{

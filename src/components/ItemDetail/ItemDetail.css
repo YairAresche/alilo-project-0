@@ -1,11 +1,11 @@
 .itemDetail {
-  width: 18rem;
+  width: 22rem;
+  height: 22rem;
   background-color: white;
   border-radius: 0.5rem;
   margin: auto;
 }
 .itemDetail img {
-  width: 18rem;
   border-radius: 0.5rem 0.5rem 0 0;
 }
 .itemDetail .details {
@@ -13,9 +13,6 @@
 }
 
 @media (min-width: 576px) {
-  .itemDetail {
-    width: 20rem;
-  }
   .itemDetail img {
     width: 20rem;
   }
@@ -24,16 +21,45 @@
   .itemDetail {
     display: flex;
     width: auto;
-    margin-top: 2rem;
     padding: 0;
     background-color: white;
     border-radius: 0.5rem;
   }
   .itemDetail img {
-    width: 18rem;
+    width: 22rem;
     border-radius: 0.5rem 0 0 0.5rem;
   }
   .itemDetail .details {
-    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 2.5rem;
+  }
+}
+@media (min-width: 992px) {
+  .itemDetail .details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 2.5rem;
+  }
+}
+@media (min-width: 1200px) {
+  .itemDetail {
+    height: 24rem;
+  }
+  .itemDetail img {
+    width: 24rem;
+  }
+  .itemDetail .details {
+    padding: 3rem;
+  }
+}
+@media (min-width: 1400px) {
+  .itemDetail {
+    height: 30rem;
+  }
+  .itemDetail img {
+    width: 30rem;
   }
 }/*# sourceMappingURL=ItemDetail.css.map */

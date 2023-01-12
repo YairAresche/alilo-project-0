@@ -1,4 +1,8 @@
 #welcome {
   text-align: center;
   padding: 1rem 1.5rem;
+}
+#welcome div p {
+  font-size: 1.25rem;
+  margin: 0;
 }/*# sourceMappingURL=Welcome.css.map */

@@ -2,4 +2,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 4rem;
+  padding-top: 1rem;
 }/*# sourceMappingURL=ItemListContainer.css.map */

@@ -1,0 +1,27 @@
+.itemDetailContainer {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  padding-bottom: 4rem;
+}
+
+@media (min-width: 768px) {
+  .itemDetailContainer {
+    padding-bottom: 5rem;
+  }
+}
+@media (min-width: 992px) {
+  .itemDetailContainer {
+    padding-bottom: 5rem;
+  }
+}
+@media (min-width: 1200px) {
+  .itemDetailContainer {
+    padding-bottom: 6rem;
+  }
+}
+@media (min-width: 1400px) {
+  .itemDetailContainer {
+    padding-bottom: 9rem;
+  }
+}/*# sourceMappingURL=ItemDetailContainer.css.map */

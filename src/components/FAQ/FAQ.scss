@@ -1,9 +1,28 @@
-.accordion:active{
-    // .accordion-item{
-    //     .accordion-collapse{
-            
-    //     }
-    // }
-    color: pink;
-    
+.faqContainer{
+    position: absolute;
+    top: 45%;
+    transform: translate(0, -45%);
+    padding-bottom: 9rem; // contraresta el padding-top del main(necesario para que el nav-fixed no tape contenido ppal)
+    div.accordion{
+        div.accordion-item{
+            h2.accordion-header{
+                button.accordion-button:focus{
+                    box-shadow: 0 0 0 0.25rem rgba(#C693A2, 0.25)
+                }
+                button.accordion-button:not(.collapsed){
+                    background-color: #C693A2;
+                    opacity: 0.75;
+                    color: white;
+                }
+                button.accordion-button::after{
+                    color: white;
+                }
+            }
+        }
+    }
 }
+
+
+// .accordion:active{
+//     color: pink;
+// }

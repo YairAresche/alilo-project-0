@@ -1,8 +1,9 @@
 import Carousel from 'react-bootstrap/Carousel';
 
-import imgCarousel from '../../assets/carousel-tazaPocillos.jpg'
-import imgCarousel2 from '../../assets/carousel-basijaPosillos.jpg'
-import imgCarousel3 from '../../assets/carousel-herramientas.jpg'
+import imgCarousel from '../../../public/aliloCarousel.png'
+import imgCarousel2 from '../../../public/pexels-cottonbro-studio-carousel.png'
+import imgCarousel3 from '../../../public/pexels-cottonbro-studio-carousel2.png'
+import imgCarousel4 from '../../../public/pexels-tony-smith-carousel3.png'
 
 import './Carousel.css'
 
@@ -18,15 +19,22 @@ function CarouselFadeExample() {
             </Carousel.Item>
             <Carousel.Item>
                 <img
-                    className="d-block w-100"
+                    className="imgCarousel d-block w-100"
                     src={imgCarousel2}
                     alt="Second slide"
                 />
             </Carousel.Item>
             <Carousel.Item>
                 <img
-                    className="d-block w-100"
+                    className="imgCarousel d-block w-100"
                     src={imgCarousel3}
+                    alt="Third slide"
+                />
+            </Carousel.Item>
+            <Carousel.Item>
+                <img
+                    className="imgCarousel d-block w-100"
+                    src={imgCarousel4}
                     alt="Third slide"
                 />
             </Carousel.Item>

@@ -1,7 +1,9 @@
 .carousel {
     margin-bottom: 2rem;
+    width: 100vw;
+    /* height: 70vh; */
 }
 
-/* .imgCarousel {
-    max-height: 90vh;
-} */
+.imgCarousel {
+    height: 70vh;
+}

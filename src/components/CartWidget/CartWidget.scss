@@ -1,0 +1,17 @@
+div.navbar-nav{
+    a.nav-link.active{
+        svg{
+            color: rgba(0, 0, 0, 0.6);
+        }
+    }
+    .text-alilo{
+        font-size: .85rem;
+        font-weight: 900;
+        color: #C693A2;
+    }
+    .cartWidget-amount{
+        font-size: .75rem;
+        background-color: #C693A2;
+        color: white;
+    }
+}

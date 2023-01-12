@@ -4,7 +4,7 @@ import { CartContextProvider } from './context/CartContext';
 import NavBar from './components/NavBar/NavBar'
 import CartContainer from './containers/CartContainer/CartContainer';
 import Welcome from './components/Welcome/Welcome';
-// import Carousel from './components/Carousel/Carousel'; // Utilizar luego
+import Carousel from './components/Carousel/Carousel'; // Utilizar luego
 import ItemListContainer from './containers/ItemListContainer/ItemListContainer';
 import ItemDetailContainer from './containers/ItemDetailContainer/ItemDetailContainer';
 import FAQ from './components/FAQ/FAQ';
@@ -12,12 +12,11 @@ import AboutMe from './components/AboutMe/AboutMe';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css'
-import { OrderContextProvider } from './context/OrderContext';
+import Footer from './components/Footer/Footer';
 
 function App() {
 
   return (
-    <OrderContextProvider >
     <CartContextProvider >
 
       <BrowserRouter className="App">
@@ -28,7 +27,7 @@ function App() {
           <Routes>
 
             <Route path='/' element={<>
-              {/* <Carousel /> */}
+              <Carousel />
               <Welcome />
               <ItemListContainer />
             </>} />
@@ -44,12 +43,14 @@ function App() {
             <Route path='/*' element={<Navigate to='/' />} />
 
           </Routes>
+          
+          <Footer />
         </main>
 
       </BrowserRouter>
 
+        
     </CartContextProvider>
-    </OrderContextProvider>
   )
 }
 

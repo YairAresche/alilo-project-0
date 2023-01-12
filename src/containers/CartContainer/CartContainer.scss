@@ -14,6 +14,16 @@
                 width: 3rem;
                 border-radius: 3px;
             }
+            span.changeStock{
+                background-color: #C693A2;
+                color: white;
+                padding: 0 10px;
+                border-radius: 10px;
+                .btn{
+                    color: white;
+                    font-weight: 600;
+                }
+            }
         }
         .cartTotal{
             border-top: 1px solid #ededed;

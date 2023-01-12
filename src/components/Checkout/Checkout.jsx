@@ -1,12 +1,11 @@
-import { NavLink } from "react-bootstrap"
-import { Link } from "react-router-dom"
+import { BsStars } from "react-icons/bs";
+import './Checkout.css'
 
-
-const Checkout = ({ generarOrden, dataForm, handleOnChange, orderId, emailConfirm }) => {
+const Checkout = ({ generarOrden, dataForm, handleOnChange, emailConfirm }) => {
 
     return (
-        <>
-
+        <div className="checkout mt-5">
+            <h3>Datos de contacto</h3>
             <form onSubmit={generarOrden}>
                 <div className='form-group w-50'>
                     <label htmlFor="name">Nombre Completo</label>
@@ -15,8 +14,9 @@ const Checkout = ({ generarOrden, dataForm, handleOnChange, orderId, emailConfir
                         className='form-control'
                         name='name'
                         value={dataForm.name}
-                        placeholder='Nombre'
+                        placeholder='Ej. Salvador Dalí'
                         onChange={handleOnChange}
+                        required
                     />
                     <label htmlFor="email">Email</label>
                     <input
@@ -24,8 +24,9 @@ const Checkout = ({ generarOrden, dataForm, handleOnChange, orderId, emailConfir
                         className='form-control'
                         name='email'
                         value={dataForm.email}
-                        placeholder='Email'
+                        placeholder='Ej. soydali@gmail.com'
                         onChange={handleOnChange}
+                        required
                     />
                     <label htmlFor="email">Repetir Email</label>
                     <input
@@ -33,32 +34,30 @@ const Checkout = ({ generarOrden, dataForm, handleOnChange, orderId, emailConfir
                         className='form-control'
                         name='emailConfirm'
                         value={dataForm.emailConfirm}
-                        placeholder='Repetir Email'
+                        placeholder='Ej. soydali@gmail.com'
                         onChange={handleOnChange}
+                        required
                     />
                     {
                         emailConfirm ? <p className='text-danger'>El email debe coincidir</p> : ''
                     }
-
-
-
-
                     <label htmlFor="phone">Telefono</label>
                     <input
                         type="number"
                         className='form-control'
                         name='phone'
                         value={dataForm.phone}
-                        placeholder='Tel.'
+                        placeholder='Ej. 1167724850.'
                         onChange={handleOnChange}
+                        required
                     />
                 </div>
-                <button className='d-block btn btn-outline-primary mt-3'> Generar Orden </button>
+                <button className='d-flex align-items-center btn btn-outline-primary mt-3'> Finalizar Compra <BsStars className="ms-2 " />  </button>
             </form>
             {
-                
+
             }
-        </>
+        </div>
     )
 }
 

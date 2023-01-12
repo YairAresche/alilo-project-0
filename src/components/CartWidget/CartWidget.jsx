@@ -12,8 +12,8 @@ const CartWidget = () => {
             {
                 cartList.length ?
                     <span className='d-md-flex align-items-md-center position-relative'>
-                        <span className="badge">{totalAmount}</span>  {<BsCart2 size={30} className='me-3' />}
-                        <span className="bg-alilo position-absolute top-0 start-100 translate-middle badge rounded-pill">
+                        <span className="text-alilo">{totalAmount}</span>  {<BsCart2 size={30} className='me-3' />}
+                        <span className="bg-alilo cartWidget-amount position-absolute top-0 start-100 translate-middle badge rounded-pill">
                             ${totalPrice}
                         </span>
                     </span>

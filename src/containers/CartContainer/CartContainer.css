@@ -15,6 +15,16 @@
   width: 3rem;
   border-radius: 3px;
 }
+.cartContainer div li span.changeStock {
+  background-color: #C693A2;
+  color: white;
+  padding: 0 10px;
+  border-radius: 10px;
+}
+.cartContainer div li span.changeStock .btn {
+  color: white;
+  font-weight: 600;
+}
 .cartContainer div .cartTotal {
   border-top: 1px solid #ededed;
   padding-top: 2rem;

@@ -29,7 +29,7 @@ function NavBar() {
     }, [])
 
     return (
-        <Navbar collapseOnSelect className='fixed-top' expand="sm" bg="dark" variant="dark">
+        <Navbar collapseOnSelect className='fixed-top' expand="sm" bg="white" variant="white">
             <Container>
                 <Navbar.Brand as={Link} to='/' className='py-0' href="#home">
                     <BrandAlilo />

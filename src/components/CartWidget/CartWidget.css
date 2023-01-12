@@ -1,4 +1,13 @@
-.bg-alilo{
-    background-color: #C693A2;
-    color: white;
+div.navbar-nav a.nav-link.active svg {
+  color: rgba(0, 0, 0, 0.6);
 }
+div.navbar-nav .text-alilo {
+  font-size: 0.85rem;
+  font-weight: 900;
+  color: #C693A2;
+}
+div.navbar-nav .cartWidget-amount {
+  font-size: 0.75rem;
+  background-color: #C693A2;
+  color: white;
+}/*# sourceMappingURL=CartWidget.css.map */

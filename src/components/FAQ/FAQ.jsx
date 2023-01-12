@@ -1,12 +1,14 @@
 import { Container } from 'react-bootstrap';
 import Accordion from 'react-bootstrap/Accordion';
+import { Link } from 'react-router-dom';
 
 import './FAQ.css'
 
 function BasicExample() {
     return (
-        <Container>
-            <Accordion>
+        <Container className='faqContainer'>
+            <Link to="/productos" className="text-decoration-none"> Volver a productos </Link>
+            <Accordion className='mt-4'>
                 <Accordion.Item eventKey="0">
                     <Accordion.Header>Cómo compro ?</Accordion.Header>
                     <Accordion.Body>

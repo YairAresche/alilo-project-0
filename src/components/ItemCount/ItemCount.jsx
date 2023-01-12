@@ -4,12 +4,10 @@ import './ItemCount.css'
 const ItemCount = ({ stock = 1, initial = 1, onAdd }) => {
 
     const [count, setCount] = useState(initial)
-    // const [stockAvailable, setStockAvailable] = useState(stock)
 
     const handlerAdd = () => {
         if (count < stock)
             setCount(count + 1)
-        // setStockAvailable(stock - count)
 
     }
     const handlerRemove = () => {
@@ -31,14 +29,10 @@ const ItemCount = ({ stock = 1, initial = 1, onAdd }) => {
                         <span>({stock} Disponibles)</span>
                     </div>
                     :
-                    <span>No quedan productos</span>
+                    <span className="text-danger">Sin stock</span>
             }
         </>
     )
 }
 
 export default ItemCount
-
-// {
-//     !stock ? <span>No quedan productos</span> : (<span>{stock} Disponibles </span>)
-// }

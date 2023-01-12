@@ -27,20 +27,54 @@ export const CartContextProvider = ({ children }) => {
 
     const itemDelete = (id) => setCartList(cartList.filter(product => product.id !== id))
 
-    const removeCart = () => {
-        setCartList([])
+const getQuantityItem = (id) => {
+    const data = cartList.find(product => product.id === id)
+    if (data) {
+        return data.quantity
+    } else {
+        return 0
     }
+}
 
-    return (
-        <CartContext.Provider value={{
-            cartList,
-            addToCart,
-            removeCart,
-            totalAmount,
-            totalPrice,
-            itemDelete,
-        }}>
-            {children}
-        </CartContext.Provider>
-    )
+const removeCart = () => {
+    setCartList([])
+}
+
+const addProduct = (id) => {
+    const data = cartList.find(product => product.id === id)
+    console.log(data)
+    if (data.quantity < data.stock) {
+        data.quantity += 1
+        setCartList([...cartList])
+    } else {
+        return 0
+    }
+}
+
+const removeProduct = (id) => {
+    const data = cartList.find(product => product.id === id)
+    console.log(data)
+    if (data.quantity > 1) {
+        data.quantity -= 1
+        setCartList([...cartList])
+    } else {
+        return 0
+    }
+}
+
+return (
+    <CartContext.Provider value={{
+        cartList,
+        addToCart,
+        removeCart,
+        totalAmount,
+        totalPrice,
+        itemDelete,
+        getQuantityItem,
+        addProduct,
+        removeProduct
+    }}>
+        {children}
+    </CartContext.Provider>
+)
 }

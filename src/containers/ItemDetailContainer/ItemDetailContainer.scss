@@ -1,0 +1,42 @@
+.itemDetailContainer{
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    padding-bottom: 4rem; // contraresta el padding-top del main(necesario para que el nav-fixed no tape contenido ppal)
+}
+
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+    // .itemDetailContainer{
+
+    // }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    .itemDetailContainer{
+        padding-bottom: 5rem;
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    .itemDetailContainer{
+        padding-bottom: 5rem;
+    }
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+    .itemDetailContainer{
+        padding-bottom: 6rem;
+    }
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) {
+    .itemDetailContainer{
+        padding-bottom: 9rem;
+    }
+}

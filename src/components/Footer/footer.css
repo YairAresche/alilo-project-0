@@ -1,0 +1,39 @@
+footer {
+  background-color: #c693a2;
+  width: 100vw;
+  margin-top: auto;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  color: white;
+  padding: 1rem 0;
+}
+.footer div a {
+  color: white;
+  text-decoration: none;
+}
+.footer div h6 {
+  margin: 0;
+  font-weight: 900;
+  margin-bottom: 0.5rem;
+}
+.footer div span {
+  display: flex;
+  align-items: center;
+}
+.footer div span p {
+  margin: 0 0 0 10px;
+}
+
+@media (min-width: 1200px) {
+  .footer {
+    padding: 1.5rem 0;
+  }
+}
+@media (min-width: 1400px) {
+  .footer {
+    padding: 2.5rem 0;
+  }
+}/*# sourceMappingURL=footer.css.map */

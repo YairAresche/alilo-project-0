@@ -1,62 +1,82 @@
-.itemDetail{
-    // display: flex;
-    // margin-top: 2rem;
-    // padding: 0;
-    width: 18rem;
+.itemDetail {
+    width: 22rem;
+    height: 22rem;
     background-color: white;
     border-radius: .5rem;
     margin: auto;
-    img{
-        width: 18rem;
+    img {
         border-radius: .5rem .5rem 0 0;
     }
-    .details{
+
+    .details {
         padding: 1rem;
     }
 }
 
 
-
 // Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) { 
-    .itemDetail{
-        width: 20rem;
-        img{
+@media (min-width: 576px) {
+    .itemDetail {
+        img {
             width: 20rem;
         }
     }
 }
 
 // Medium devices (tablets, 768px and up)
-@media (min-width: 768px) { 
-    .itemDetail{
+@media (min-width: 768px) {
+    .itemDetail {
         display: flex;
         width: auto;
-        margin-top: 2rem;
         padding: 0;
         background-color: white;
         border-radius: .5rem;
-        img{
-            width: 18rem;
+
+        img {
+            width: 22rem;
             border-radius: .5rem 0 0 .5rem;
         }
-        .details{
-            padding: 2rem;
+
+        .details {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            padding: 2.5rem;
         }
     }
 }
 
 // Large devices (desktops, 992px and up)
-@media (min-width: 992px) { 
-
+@media (min-width: 992px) {
+    .itemDetail {
+        .details {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            padding: 2.5rem;
+        }
+    }
 }
 
 // X-Large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { 
-
+@media (min-width: 1200px) {
+    .itemDetail {
+        height: 24rem;
+        img {
+            width: 24rem;
+        }
+        .details{
+            padding: 3rem;
+        }
+    }
 }
 
 // XX-Large devices (larger desktops, 1400px and up)
-@media (min-width: 1400px) { 
-
+@media (min-width: 1400px) {
+    .itemDetail {
+        height: 30rem;
+        img {
+            width: 30rem;
+        }
+    }
 }
