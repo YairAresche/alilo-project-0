@@ -9,10 +9,10 @@ import ItemListContainer from './containers/ItemListContainer/ItemListContainer'
 import ItemDetailContainer from './containers/ItemDetailContainer/ItemDetailContainer';
 import FAQ from './components/FAQ/FAQ';
 import AboutMe from './components/AboutMe/AboutMe';
+import Footer from './components/Footer/Footer';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css'
-import Footer from './components/Footer/Footer';
 
 function App() {
 
@@ -31,15 +31,15 @@ function App() {
               <Welcome />
               <ItemListContainer />
               <AboutMe />
-              <Footer />
+              <FAQ />
             </>} />
 
             <Route path='/productos' element={<ItemListContainer />} />
             <Route path='/categoria/:categoryId' element={<ItemListContainer />} />
             <Route path='/detalles/:productId' element={<ItemDetailContainer />} />
-            <Route path='/cart' element={<CartContainer />} />
-            <Route path='/FAQ' element={<FAQ />} />
             <Route path='/sobreMi' element={<AboutMe />} />
+            <Route path='/FAQ' element={<FAQ />} />
+            <Route path='/cart' element={<CartContainer />} />
 
 
             <Route path='/*' element={<Navigate to='/' />} />
