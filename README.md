@@ -4,7 +4,8 @@
 [![N|Solid](https://i.postimg.cc/zGP3k1sB/logo-alilo-200x200.png)](https://aliloceramica.netlify.app/)
 ## Alilo - Tienda de Cerámica
 
-
+Minimalist design app, with simple navigability to facilitate the user experience.
+Log in and buy in a practical way.
 
 ## Tech
 
