@@ -44,21 +44,7 @@
   }
 }
 @media (min-width: 1200px) {
-  .itemDetail {
-    height: 24rem;
-  }
-  .itemDetail img {
-    width: 24rem;
-  }
   .itemDetail .details {
     padding: 3rem;
-  }
-}
-@media (min-width: 1400px) {
-  .itemDetail {
-    height: 30rem;
-  }
-  .itemDetail img {
-    width: 30rem;
   }
 }/*# sourceMappingURL=ItemDetail.css.map */

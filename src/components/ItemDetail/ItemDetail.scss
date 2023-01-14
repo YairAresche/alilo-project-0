@@ -61,10 +61,10 @@
 // X-Large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
     .itemDetail {
-        height: 24rem;
-        img {
-            width: 24rem;
-        }
+        // height: 24rem;
+        // img {
+        //     width: 24rem;
+        // }
         .details{
             padding: 3rem;
         }
@@ -73,10 +73,10 @@
 
 // XX-Large devices (larger desktops, 1400px and up)
 @media (min-width: 1400px) {
-    .itemDetail {
-        height: 30rem;
-        img {
-            width: 30rem;
-        }
-    }
+    // .itemDetail {
+    //     height: 30rem;
+    //     img {
+    //         width: 30rem;
+    //     }
+    // }
 }
