@@ -8,7 +8,7 @@ function BasicExample() {
     return (
         <Container className='faqContainer'>
             <Link to="/productos" className="text-decoration-none"> Volver a productos </Link>
-            <Accordion className='mt-4'>
+            <Accordion className='mt-xl-1'>
                 <Accordion.Item eventKey="0">
                     <Accordion.Header>Cómo compro ?</Accordion.Header>
                     <Accordion.Body>

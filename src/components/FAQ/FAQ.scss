@@ -1,11 +1,14 @@
 .faqContainer{
-    position: absolute;
-    top: 45%;
-    transform: translate(0, -45%);
-    padding-bottom: 9rem; // contraresta el padding-top del main(necesario para que el nav-fixed no tape contenido ppal)
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // height: 60vh;
     div.accordion{
         div.accordion-item{
             h2.accordion-header{
+                button.accordion-button{
+                    padding: .75rem 1.25rem;
+                }
                 button.accordion-button:focus{
                     box-shadow: 0 0 0 0.25rem rgba(#C693A2, 0.25)
                 }
@@ -23,6 +26,38 @@
 }
 
 
-// .accordion:active{
-//     color: pink;
-// }
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) {
+    .faqContainer{
+        div.accordion{
+            div.accordion-item{
+                h2.accordion-header{
+                    button.accordion-button{
+                        padding: 1rem 1.25rem;
+                    }
+                }
+            }    
+        }
+    }
+}

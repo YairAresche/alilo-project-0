@@ -8,7 +8,7 @@
     // place-items: center;
     // align-items: center;
     justify-content: center;
-    padding-bottom: 4rem; // contraresta el padding-top del main(necesario para que el nav-fixed no tape contenido ppal)
+    padding-bottom: 0rem; // contraresta el padding-top del main(necesario para que el nav-fixed no tape contenido ppal)
 }
 
 
@@ -21,28 +21,28 @@
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
-    .itemDetailContainer{
-        padding-bottom: 5rem;
-    }
+    // .itemDetailContainer{
+    //     padding-bottom: 0rem;
+    // }
 }
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
-    .itemDetailContainer{
-        padding-bottom: 0rem;
-    }
+    // .itemDetailContainer{
+    //     padding-bottom: 0rem;
+    // }
 }
 
 // X-Large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
-    .itemDetailContainer{
-        // padding-bottom: 0rem;
-    }
+    // .itemDetailContainer{
+    //     // padding-bottom: 0rem;
+    // }
 }
 
 // XX-Large devices (larger desktops, 1400px and up)
 @media (min-width: 1400px) {
-    .itemDetailContainer{
-        padding-bottom: 9rem;
-    }
+    // .itemDetailContainer{
+    //     // padding-bottom: 9rem;
+    // }
 }
