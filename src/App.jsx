@@ -31,7 +31,6 @@ function App() {
               <Welcome />
               <ItemListContainer />
               <AboutMe />
-              <FAQ />
             </>} />
 
             <Route path='/productos' element={<ItemListContainer />} />

@@ -42,7 +42,6 @@ const removeCart = () => {
 
 const addProduct = (id) => {
     const data = cartList.find(product => product.id === id)
-    console.log(data)
     if (data.quantity < data.stock) {
         data.quantity += 1
         setCartList([...cartList])
@@ -53,7 +52,6 @@ const addProduct = (id) => {
 
 const removeProduct = (id) => {
     const data = cartList.find(product => product.id === id)
-    console.log(data)
     if (data.quantity > 1) {
         data.quantity -= 1
         setCartList([...cartList])

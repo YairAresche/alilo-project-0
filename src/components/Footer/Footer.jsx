@@ -1,10 +1,10 @@
-import { Container, NavLink } from 'react-bootstrap'
+import { Container } from 'react-bootstrap'
 import { AiOutlineWhatsApp, AiOutlineMail } from "react-icons/ai";
 import { GoLocation } from "react-icons/go"
 import { BsInstagram, BsFacebook, BsCashStack } from "react-icons/bs";
 import { GrAmex } from "react-icons/gr"
 import { FaCcVisa } from "react-icons/fa"
-import { Link } from 'react-router-dom';
+
 import './footer.css'
 
 
@@ -14,11 +14,8 @@ const Footer = () => {
             <Container className="footer">
                 <div>
                     <h6>NUESTRAS REDES</h6>
-                    {/* <NavLink as={Link} > <span> <BsInstagram /> <p>/aliloceramica</p> </span> </NavLink> */}
                     <a href='https://www.instagram.com/aliloceramica/' target="_blank"> <span> <BsInstagram /> <p>/aliloceramica</p> </span> </a>
                     <a href='https://m.facebook.com/aliloceramica' target="_blank"> <span> <BsFacebook /> <p>/aliloceramica</p> </span> </a>
-                    {/* <span><BsFacebook /> <p>/aliloceramica</p> </span> */}
-                    {/* https://m.facebook.com/aliloceramica */}
                 </div>
                 <div>
                     <h6>CONCTACTENOS</h6>

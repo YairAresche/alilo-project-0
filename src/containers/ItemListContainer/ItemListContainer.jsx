@@ -32,7 +32,7 @@ const ItemListContainer = () => {
             <Container className='itemListContainer '>
                 <h3>Productos</h3>
                 {
-                    loading ? <Loader /> : <ItemList productos={products} />
+                    loading ? <Loader /> : <ItemList products={products} />
                 }
             </Container>
         </>

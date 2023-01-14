@@ -1,7 +1,8 @@
 .itemDetailContainer {
-  position: absolute;
-  top: 50%;
-  transform: translate(0, -50%);
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   padding-bottom: 4rem;
 }
 
@@ -12,12 +13,7 @@
 }
 @media (min-width: 992px) {
   .itemDetailContainer {
-    padding-bottom: 5rem;
-  }
-}
-@media (min-width: 1200px) {
-  .itemDetailContainer {
-    padding-bottom: 6rem;
+    padding-bottom: 0rem;
   }
 }
 @media (min-width: 1400px) {

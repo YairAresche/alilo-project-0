@@ -1,7 +1,13 @@
 .itemDetailContainer{
-    position: absolute;
-    top: 50%;
-    transform: translate(0, -50%);
+    // position: absolute;
+    // top: 50%;
+    // transform: translate(0, -50%);
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    // place-items: center;
+    // align-items: center;
+    justify-content: center;
     padding-bottom: 4rem; // contraresta el padding-top del main(necesario para que el nav-fixed no tape contenido ppal)
 }
 
@@ -23,14 +29,14 @@
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
     .itemDetailContainer{
-        padding-bottom: 5rem;
+        padding-bottom: 0rem;
     }
 }
 
 // X-Large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
     .itemDetailContainer{
-        padding-bottom: 6rem;
+        // padding-bottom: 0rem;
     }
 }
 

@@ -21,9 +21,10 @@ function NavBar() {
         const queryCollection = collection(db, 'productos')
         const queryActive = query(queryCollection, where('isActive', '==', true))
         getDocs(queryActive)
-            .then(resp => resp.docs.map(product => product.data().category))
+            .then(resp => resp.docs.map(product => product.data().category)) // traigo las categorias de los productos activos
             .then(resp => resp.filter((category, idx) => {
                 return resp.indexOf(category) === idx;
+                // filtrado para que no se repitan las categorias por cada producto con misma categoria
             }))
             .then(resp => setCategories(resp))
     }, [])
@@ -62,33 +63,3 @@ function NavBar() {
 }
 
 export default NavBar;
-
-
-
-
-
-
-
-
-
-
-
-
-// import { productos } from '../Helpers/gFetch';
-
-
-
-
-
-
-
-    // const [products, setProducts] = useState()
-
-
-
-    // const categorias = [];
-    // productos.forEach( product => {
-    //     if(!categorias.includes(product.category)){ // Si la categoria no está incluida la pushea a categorias.
-    //         categorias.push(product.category)
-    //     }
-    // });
